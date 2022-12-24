@@ -16,32 +16,117 @@ body {
     font-family: 'Kumbh Sans', sans-serif;
 }
 
+/* card */
+
 .card {
     background-color: #fff;
-    border-radius: 25px;
-    height: 50vh;
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
     width: 25vw;
+    height: 60vh;
+    position: absolute;
+    border-radius: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.card__top img {
-    border-radius: 25px 25px 0 0;
-    height: 100%;
+/* card header */
+
+.card__banner img {
     width: 100%;
+    height: 100%;
+    border-radius: 25px 25px 0 0;
 }
 
-.card__img {
+/* card header avatar */
+.card__avatar {
     position: relative;
 }
 
-.card__img img {
-    border-radius: 50%;
-    left: 50%;
+.card__avatar img {
     position: absolute;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
+    border: 5px #fff solid;
+    border-radius: 50%;
+}
+/* card main */
+
+
+/* card main texts */
+.card__text {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card__text__name {
+    display: flex;
+    margin-top: 5rem;
+}
+
+.card__text__name h1 {
+    color: var(--very-dark-desaturated-blue);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.card__text__name h2 {
+    color: var(--dark-gray);
+    font-weight: 700;
+    font-size: 18px;
+    margin-left: .5rem;
+}
+
+.card__text__place h2 {
+    color: var(--dark-gray);
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 1rem;
+}
+
+/* footer */
+
+.underline {
+    border: none;
+    background-color: var(--dark-gray);
+    width: 100%;
+    height: 1px;
+    margin: 2rem 0;
+}
+
+.card__info {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.card__info__follow h1,
+.card__info__likes h1,
+.card__info__photos h1 {
+    font-size: 18px;
+    color: var(--very-dark-desaturated-blue);
+    font-weight: 700;
+}
+
+.card__info__follow p,
+.card__info__likes p,
+.card__info__photos p {
+    font-size: 14px;
+    color: var(--dark-gray);
+    font-weight: 400;
+}
+
+/* MEDIA QUERIES */
+/* MEDIA QUERIES for: 375px */
+@media only screen and (max-width: 375px) {
+
+    .card {
+        width: 90vw;
+        height: 65vh;
+    }
+
 }
 
 /* about author and quest */
