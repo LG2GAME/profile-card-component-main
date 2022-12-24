@@ -1,0 +1,56 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+body {
+    background-color: var(--dark-cyan);
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 25px;
+    height: 50vh;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 25vw;
+}
+
+.card__top img {
+    border-radius: 25px 25px 0 0;
+    height: 100%;
+    width: 100%;
+}
+
+.card__img {
+    position: relative;
+}
+
+.card__img img {
+    border-radius: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+/* about author and quest */
+.attribution {
+    font-size: 11px; text-align: center;
+    margin: 0 0 1rem 0;
+    bottom: 0;
+    color: #fff;
+}
+.attribution a {
+    color: #f9f9f9;
+}
