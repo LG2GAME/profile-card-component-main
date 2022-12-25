@@ -16,6 +16,24 @@ body {
     font-family: 'Kumbh Sans', sans-serif;
 }
 
+html {
+    overflow: hidden;
+}
+
+.bg {
+    position: absolute;
+}
+
+.bg-top {
+    position: absolute;
+    transform: translate(-25%, -50%);
+}
+
+.bg-bottom {
+    position: absolute;
+    transform: translate(75%, 25%);
+}
+
 /* card */
 
 .card {
@@ -121,6 +139,14 @@ body {
 /* MEDIA QUERIES */
 /* MEDIA QUERIES for: 375px */
 @media only screen and (max-width: 375px) {
+
+    .bg-top {
+        transform: translate(-75%, -75%);
+    }
+
+    .bg-bottom {
+        transform: translate(25%, 25%);
+    }
 
     .card {
         width: 90vw;
